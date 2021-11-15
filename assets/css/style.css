@@ -7,120 +7,40 @@
     --honeydew: rgba(241, 250, 238, 1);
     --powder-blue: rgba(168, 218, 220, 1);
     --celadon-blue: rgba(69, 123, 157, 1);
-    --prussian-blue: rgba(29, 53, 87, 1);
+    --prussian-blue: rgba(29, 53, 87, 1); /* used for background colour*/
 }
 
-/*---------------General Body*/
-body {
-    background: var(--celadon-blue);
-    font-family: "Roboto", sans-serif;
-
-    margin:0;
+/*---------------General*/
+* {
+    border: none;
     padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--prussian-blue);
+    font-family: "Roboto", "Lato", Arial, Helvetica, sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 .uppercase {
     text-transform: uppercase;
 }
-/*---------------header*/
+/*---------------Header*/
 
 header {
-}
-/*---------------Navbar*/
-
-.nav-links {
-    text-align: center;
+    background-color: var(--honeydew);
+    text-align: center;    
 }
 
-.nav-links li {
-    display: flex;
-}
-
-
-.hero-image {
-    background-image: url("/assets/images/adam-valstar-PLuIeOaqpYg-unsplash.jpg");
-    height: 20vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-.hero-heading {
-    font-size: 1.2rem;
+.logo-heading {
+    font-size: 14rem;
     color: var(--imperial-red);
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    bottom: 2%;
-    text-align: center;
-}
-
-.hero-heading a {
-    text-decoration: none;
-    color: var(--imperial-red);
-}
-
-/*---------------Welcome Section*/
-
-.welcome-section {
-    background: var(--powder-blue);
-    padding: 0;
-    margin: 0;
-}
-
-.welcome-heading {
-    background: var(--honeydew);
-    padding: 10px;
-    text-align: center;
-}
-
-.welcome-info {
-    flex-wrap: around;
-    line-height: 1.5rem;
-}
-
-.welcome-section-left {
-
-}
-
-.welcome-section-right {
-
-}
-
-.welcome-section-left, .welcome-section-right{
-    margin: 0 10px;
-    padding: 10px;
-}
-
-
-
-#welcome-img {
-    height: 50%;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-/*---------------Footer Section*/
-footer {
-    background: var(--imperial-red);
-}
-
-@media screen and (min-width: 480px){
-    .hero-heading {
-    font-size: 2rem;
-    color: var(--imperial-red);
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-
-    right: 0;
-    bottom: 2%;
-    text-align: center;
-}
 }

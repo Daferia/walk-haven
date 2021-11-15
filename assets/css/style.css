@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+
+/*---------------Root shortcuts*/
+:root {
+    --imperial-red: rgba(230, 57, 70, 1);
+    --honeydew: rgba(241, 250, 238, 1);
+    --powder-blue: rgba(168, 218, 220, 1);
+    --celadon-blue: rgba(69, 123, 157, 1);
+    --prussian-blue: rgba(29, 53, 87, 1);
+}
+
+/*---------------General Body*/
+body {
+    background: var(--celadon-blue);
+    font-family: "Roboto", sans-serif;
+
+    margin:0;
+    padding: 0;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+/*---------------header*/
+
+header {
+}
+/*---------------Navbar*/
+
+.nav-links {
+    text-align: center;
+}
+
+.nav-links li {
+    display: flex;
+}
+
+
+.hero-image {
+    background-image: url("/assets/images/adam-valstar-PLuIeOaqpYg-unsplash.jpg");
+    height: 20vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-heading {
+    font-size: 1.2rem;
+    color: var(--imperial-red);
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 2%;
+    text-align: center;
+}
+
+.hero-heading a {
+    text-decoration: none;
+    color: var(--imperial-red);
+}
+
+/*---------------Welcome Section*/
+
+.welcome-section {
+    background: var(--powder-blue);
+    padding: 0;
+    margin: 0;
+}
+
+.welcome-heading {
+    background: var(--honeydew);
+    padding: 10px;
+    text-align: center;
+}
+
+.welcome-info {
+    flex-wrap: around;
+    line-height: 1.5rem;
+}
+
+.welcome-section-left {
+
+}
+
+.welcome-section-right {
+
+}
+
+.welcome-section-left, .welcome-section-right{
+    margin: 0 10px;
+    padding: 10px;
+}
+
+
+
+#welcome-img {
+    height: 50%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/*---------------Footer Section*/
+footer {
+    background: var(--imperial-red);
+}
+
+@media screen and (min-width: 480px){
+    .hero-heading {
+    font-size: 2rem;
+    color: var(--imperial-red);
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+
+    right: 0;
+    bottom: 2%;
+    text-align: center;
+}
+}

@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200&family=Roboto:wght@100;300;400;500;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@700&family=Lato:wght@300&family=Oswald:wght@200&family=Roboto:wght@100;300;400;500;700&display=swap');
 
 /*---------------Root shortcuts*/
 :root {
     --imperial-red: rgba(230, 57, 70, 1);
     --honeydew: rgba(241, 250, 238, 1);
-    --powder-blue: rgba(168, 218, 220, 1);
+    --powder-blue: rgba(168, 218, 220, 1);/* used for background colour*/
     --celadon-blue: rgba(69, 123, 157, 1);
-    --prussian-blue: rgba(29, 53, 87, 1); /* used for background colour*/
+    --prussian-blue: rgba(29, 53, 87, 1); 
 }
 
 /*---------------General*/
@@ -18,29 +17,100 @@
 }
 
 body {
-    background-color: var(--prussian-blue);
+    background-color: var(--honeydew);
     font-family: "Roboto", "Lato", Arial, Helvetica, sans-serif;
 }
 
-li {
-    list-style-type: none;
-}
-
-a {
+a{
     text-decoration: none;
 }
 
-.uppercase {
-    text-transform: uppercase;
-}
-/*---------------Header*/
-
-header {
-    background-color: var(--honeydew);
-    text-align: center;    
+.active {
+    border-bottom: 2px solid orange;
 }
 
-.logo-heading {
-    font-size: 14rem;
+/*---------------Header & Nav*/
+
+.logo {
+    font-size: 2rem;
+    background: var(--powder-blue);
     color: var(--imperial-red);
+    font-family: "Arima Madurai", sans-serif;
+    display: flex;
+    justify-content: center;
+}
+.navbar {
+    display: flex;    
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 100%;
+}
+.nav-link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: rgb(80, 80, 80); 
+}
+
+.nav-link:hover {
+    color: rgb(236, 158, 13);
+}
+
+/*---------------Header & Nav*/
+
+.main-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-heading {
+    color: rgb(216, 112, 147);
+    background: rgba(5, 89, 145, 0.7);
+    border-radius: 5px;
+    padding: 5px;
+    height:auto;
+    width:30%;
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    text-align: center;
+
+
+    /*display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;*/
+}
+
+.main-heading img {
+    /*height: 100%;
+    width: 100%;*/
+    position: relative;
+}
+
+@media screen and (min-width:655px) {
+    .logo {
+        font-size: 2rem;
+        background: var(--powder-blue);
+        color: var(--imperial-red);
+        font-family: "Arima Madurai", sans-serif;
+    }
+
+    .main-heading {
+        font-size: 1.8rem;
+        
+        padding: 5px;
+        height:auto;
+        width: 30%;
+        position: absolute;
+        bottom: 10%;
+        left: 10%;
+    }
+}
+
+@media screen and (min-width:770px) {
+    
 }

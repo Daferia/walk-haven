@@ -17,6 +17,7 @@
     margin: 0;
 }
 
+
 body {
     /*position: relative;*/
     background-color: var(--honeydew);
@@ -30,6 +31,10 @@ a{
 
 .navbar a.active {
     color: rgb(255, 165, 0);
+}
+
+.uppercase  {
+    text-transform: uppercase;
 }
 
 /*---------------Header & Nav*/
@@ -90,7 +95,7 @@ a{
 
 footer {
     position: relative;
-    min-height: 5%;
+    min-height: 10%;
     width: 100%;
     bottom: 0;
 
@@ -114,6 +119,10 @@ footer a {
 @media screen and (min-width:480px) {
     .logo {
         font-size: 2rem;
+    }
+
+    .navbar {
+        font-size: 1.4rem;
     }
 
     .main-heading {

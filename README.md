@@ -1,13 +1,11 @@
 ![Logo](wireframes/logo.JPG)
 
-# The Vintage Gamer
+# Walk Haven - Dog Park
 
 
 
 # Goal for this Project
-Welcome to The Vintage Gamer Webiste. This webiste is aimed to provide a summary of all the different generations in console gaming and its leaps over the years. 
-
-This site will also provide a history timeline with a d genreal welcome page as well as a contact form on the local meet-ups where we show case our collections, trade, buy or sell any items.
+Welcome to Walk Haven - Dog Park Webiste. 
 
 
 
@@ -50,25 +48,25 @@ This site will also provide a history timeline with a d genreal welcome page as 
 * Easily navigated around.
 * Quality and valuable content.
 * Easily found contact details.
-* Form to directly contact the club.
+* Form to contact the Owners.
 
 ## User Stories
-* As an End User, I want to be infomred of the different generations on console gamimg.
+* As an End User, I want to be infomred of how the park came to be.
 * As an End User, I want to be able to easily contact the the site owner/meet-up organiser.
 * As an End User, I want to be able to make contact with us via several different methods, i.e. social media.
 * As an End User, I want to be able to easily navigate through the website.
-* As an End User, I want to know what Meet-Ups are taking place.
+* As an End User, I want to know where the park is situated and directions.
 
 ## Site owners Goals
-* Promote the club.
-* Increase the number of members.
+* Promote the park by getting user to see what we are about.
+* Increase the number of volunteers and memberships.
 * Increase rankings on search engines.
 
 ### Requirements
 * Easy to navigate on various screen sizes.
-* Clear information on the services provided.
+* Clear information on the parks services.
 * Keep the user interested with small bits of information to make them want to engage with the club.
-* Simple methods of contacting the club.
+* Simple methods of contacting the park.
 * Visually inviting so users do not leave.
 
 ### Expectations
@@ -112,7 +110,7 @@ I will explain the uses of the varius colours below, starting from top to bottom
 
 ### Structure
 
-I have decided to use Flex for creating a resposive layout over Bootstrap. I preferred flex over bootstrap due to the easy in style my webiste and ot worry about the Specifity issue created by importing the bootstrap library.
+I have decided to use Flex for creating a resposive layout over Bootstrap. I preferred flex over bootstrap due to the flexibilty (no pun intended) in styling my webiste and to overly worry about the Specifity issue created by importing the bootstrap library.
 \
 &nbsp;
 [Back to Top](#table-of-contents)
@@ -157,10 +155,10 @@ The navigation bar is fully responsive to allow for various screen sizes. It inc
    - General Welome page with a brief intro to the site. 
    - Hero Image as well as a logo.
 
-### History of Video Gaming
+### Gallery
 
-+ Scroll snap on each generation
- - this will have a summary of each generation as well as images of the the generation.
++ Collection of images taken mostly from Unsplash
+ - random pictures of pets and people walking their dogs.
 
 ### Contact Section
 
@@ -205,7 +203,8 @@ The navigation bar is fully responsive to allow for various screen sizes. It inc
 &nbsp;
 
 # Testing
-
+* on testing the stie I found the images really slowed the site down. I used a site called
+[Compressjpeg](https://compressjepg.com/ "Compressjepg") to compress the files sizes for better rendering on load.
 
 
 ## Unfixed Bugs
@@ -226,7 +225,7 @@ For code insperation, help and advice,
 
 # image credits and location
 
-* [https://unsplash.com/photos/EV9_vVMZTcg?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink](/workspace/the-vintage-gamer/assets/images/chewy-EV9_vVMZTcg-unsplash.jpg "Unsplash - Chewey");
+* Most of my images were from a person call Chewy. I found his images really expressed what i was trying to achieve.[https://unsplash.com/photos/EV9_vVMZTcg?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink](/workspace/the-vintage-gamer/assets/images/chewy-EV9_vVMZTcg-unsplash.jpg "Unsplash - Chewey");
 
 *[https://unsplash.com/photos/PLuIeOaqpYg?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink](assets/images/adam-valstar-PLuIeOaqpYg-unsplash.jpg "Adam Valstar")
 

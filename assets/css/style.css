@@ -35,7 +35,6 @@ a{
 /*---------------Header & Nav*/
 
 .logo {
-    font-size: 2rem;
     background: var(--powder-blue);
     color: var(--imperial-red);
     font-family: "Arima Madurai", sans-serif;
@@ -43,7 +42,9 @@ a{
     justify-content: center;
 }
 .navbar {
+    
     margin-bottom: 2px;
+
 
     display: flex;    
     align-items: center;
@@ -52,9 +53,9 @@ a{
     flex-wrap: wrap;
 }
 .nav-link {
+    color: rgb(80, 80, 80);
     text-decoration: none;
-    font-weight: 500;
-    color: rgb(80, 80, 80); 
+    font-weight: 500; 
 }
 
 .nav-link:hover {
@@ -88,7 +89,7 @@ a{
 /*---------------footer*/
 
 footer {
-    position: absolute;
+    position: relative;
     min-height: 5%;
     width: 100%;
     bottom: 0;
@@ -100,12 +101,19 @@ footer a {
     padding: 10px;
 }
 
+.gallery-img {
+    display: flex;
+    flex-wrap: wrap;
+}
+.gallery-img img {
+    height: auto;
+    width: 100%;
+}
+
+
 @media screen and (min-width:480px) {
     .logo {
         font-size: 2rem;
-        background: var(--powder-blue);
-        color: var(--imperial-red);
-        font-family: "Arima Madurai", sans-serif;
     }
 
     .main-heading {
@@ -118,22 +126,12 @@ footer a {
         left: 10%;
         text-align: center;
     }
-    .nav-link {
-        font-size: 1.4rem;
-    }
 
     .gallery-img img {
-        height: auto;
-        width: 50%;
+        height: 50px;
+        width: 50px;
     }
 
 }
 
-.gallery-img {
-    display: flex;
-    flex-wrap: wrap;
-}
-.gallery-img img {
-    height: auto;
-    width: 100%;
-}
+

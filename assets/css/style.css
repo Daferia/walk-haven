@@ -3,8 +3,8 @@
 /*---------------Root shortcuts*/
 :root {
     --imperial-red: rgba(230, 57, 70, 1);
-    --honeydew: rgba(241, 250, 238, 1);
-    --powder-blue: rgba(168, 218, 220, 1);/* used for background colour*/
+    --honeydew: rgba(241, 250, 238, 1);/* used for background colour*/
+    --powder-blue: rgba(168, 218, 220, 1);
     --celadon-blue: rgba(69, 123, 157, 1);
     --prussian-blue: rgba(29, 53, 87, 1); 
 }
@@ -37,6 +37,10 @@ a{
     text-transform: uppercase;
 }
 
+.clear-fix {
+    clear: both;
+}
+
 /*---------------Header & Nav*/
 
 .logo {
@@ -67,7 +71,7 @@ a{
     color: rgb(236, 158, 13);
 }
 
-/*---------------Header & Nav*/
+/*---------------Main Section*/
 
 .main-section {
     font-size: 18%;
@@ -91,11 +95,18 @@ a{
 }
 
 
+.gallery-img img {
+    height: auto;
+    width: 100%;
+    float: left;
+    
+}
+
 /*---------------footer*/
 
-footer {
+.main-footer {
     position: relative;
-    min-height: 10%;
+    min-height: auto;
     width: 100%;
     bottom: 0;
 
@@ -106,14 +117,14 @@ footer a {
     padding: 10px;
 }
 
-.gallery-img {
-    display: flex;
-    flex-wrap: wrap;
+.left-footer {
+float: left;
 }
-.gallery-img img {
-    height: auto;
-    width: 100%;
+
+.rigth-footer {
+    float: right;
 }
+
 
 
 @media screen and (min-width:480px) {
@@ -135,10 +146,14 @@ footer a {
         left: 10%;
         text-align: center;
     }
+    
+    .gallery-img {
+    
+        
 
+    }
     .gallery-img img {
-        height: 50px;
-        width: 50px;
+
     }
 
 }

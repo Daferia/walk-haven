@@ -17,12 +17,20 @@
     margin: 0;
 }
 
+html, body, div, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
 
 body {
     /*position: relative;*/
     background-color: var(--honeydew);
     font-family: "Roboto", "Lato", Arial, Helvetica, sans-serif;
-    min-height: 100%;
+    line-height: 1.2;
 }
 
 a{
@@ -37,9 +45,6 @@ a{
     text-transform: uppercase;
 }
 
-.clear-fix {
-    clear: both;
-}
 
 /*---------------Header & Nav*/
 
@@ -47,13 +52,12 @@ a{
     background: var(--powder-blue);
     color: var(--imperial-red);
     font-family: "Arima Madurai", sans-serif;
+
     display: flex;
     justify-content: center;
 }
 .navbar {
-    
     margin-bottom: 2px;
-
 
     display: flex;    
     align-items: center;
@@ -94,11 +98,16 @@ a{
     order: -1;
 }
 
+.gallery-img {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .gallery-img img {
-    height: auto;
+
     width: 100%;
-    float: left;
+    max-height: 75vh;
+    min-width: 0;
     
 }
 
@@ -117,13 +126,7 @@ footer a {
     padding: 10px;
 }
 
-.left-footer {
-float: left;
-}
 
-.rigth-footer {
-    float: right;
-}
 
 
 
@@ -148,13 +151,18 @@ float: left;
     }
     
     .gallery-img {
-    
+       height: 100%;
+       flex-flow: 1;
         
 
     }
     .gallery-img img {
-
+        height: 55%;
+        width: 33%;
+        object-fit: cover;
+        vertical-align: bottom;
     }
+
 
 }
 

@@ -43,7 +43,7 @@ a{
 
 .logo {
     background: var(--powder-blue);
-    color: var(--imperial-red);
+    color: rgb(216, 112, 147);
     font-family: "Arima Madurai", sans-serif;
 
     display: flex;

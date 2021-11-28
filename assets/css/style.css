@@ -37,10 +37,6 @@ a{
     text-decoration: none;
 }
 
-.navbar a.active {
-    color: rgb(255, 165, 0);
-}
-
 .uppercase  {
     text-transform: uppercase;
 }
@@ -75,6 +71,10 @@ a{
     color: rgb(236, 158, 13);
 }
 
+.navbar a.active {
+    color: rgb(255, 165, 0);
+}
+
 /*---------------Main Section*/
 
 .main-section {
@@ -97,6 +97,12 @@ a{
     
     order: -1;
 }
+
+.main-info {
+    
+}
+
+/*---------------Gallery Page*/
 
 .gallery-img {
     display: flex;
